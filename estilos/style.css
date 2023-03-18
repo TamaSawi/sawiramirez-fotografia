@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: white;
+    position: sticky;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+ul li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+footer {
+    padding: 50px;
+    background-color: #6969691f;
+    margin-top: 40px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+/* bodas*/
+.bodas-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 35px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/*infantil*/
+.infantil-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 35px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* nosotros */
+
+.nosotros-info {
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+/* contacto */
+
+fieldset {
+    padding: 50px;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+/* MEDIA QUERIES*/
+
+/*mobile*/
+@media only screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+    header img {
+        width: 70%;
+    }
+    .menu-nav {
+        padding: 10px 0px;
+    }
+    
+    /*bodas*/
+    .bodas-cont {
+        grid-template-columns: 1fr;
+    }
+}
