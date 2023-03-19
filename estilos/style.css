@@ -10,7 +10,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-header {
+ header {
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -37,8 +37,10 @@ ul li a {
     color: black;
     font-size: 1.1rem;
     text-decoration: none;
+} 
+.nav-link {
+    font-size: 1.2rem;
 }
-
 footer {
     padding: 50px;
     background-color: #6969691f;
@@ -57,7 +59,7 @@ footer ul {
 }
 
 /* bodas*/
-.bodas-cont {
+/* .bodas-cont {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -65,7 +67,7 @@ footer ul {
     justify-items: center;
     margin-top: 20px;
 
-}
+} */
 
 /*infantil*/
 .infantil-cont {
