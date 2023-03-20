@@ -10,37 +10,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
- header {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    background-color: white;
-    position: sticky;
-}
-
-.menu-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-}
-
-ul li {
-    list-style: none;
-    margin: 0px 20px;
-    display: inline-block;
-}
-
-ul li a {
-    color: black;
-    font-size: 1.1rem;
-    text-decoration: none;
-} 
 .nav-link {
     font-size: 1.2rem;
 }
+
+.navbar-collapse {
+justify-content:flex-end;
+}
+
 footer {
     padding: 50px;
     background-color: #6969691f;
@@ -50,13 +27,21 @@ footer {
 
 footer ul {
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: space-evenly;
+}
+
+footer ul li {
+list-style: none;
+}
+
+footer .bi {
+    color:rgb(79, 79, 79);
+    font-size: 2rem;
 }
 /*index*/
 .im-principal img {
     width: 100%;
-}
+} 
 
 /* bodas*/
 /* .bodas-cont {
@@ -66,7 +51,6 @@ footer ul {
     grid-row-gap: 35px;
     justify-items: center;
     margin-top: 20px;
-
 } */
 
 /*infantil*/
@@ -94,22 +78,15 @@ fieldset {
     margin-bottom: 100px;
 }
 
+
 /* MEDIA QUERIES*/
 
 /*mobile*/
 @media only screen and (max-width: 576px) {
-    header {
-        flex-direction: column;
-    }
-    header img {
-        width: 70%;
-    }
-    .menu-nav {
-        padding: 10px 0px;
-    }
+   
     
-    /*bodas*/
-    .bodas-cont {
-        grid-template-columns: 1fr;
+/*bodas*/
+.bodas-cont {
+    grid-template-columns: 1fr;
     }
 }
