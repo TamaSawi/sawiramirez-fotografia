@@ -1,13 +1,18 @@
 /* nosotros */
-.nosotros-container {
-    text-align: center;
+.bio-nosotros {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .nosotros-container article {
-    display: flex;
+    display:inline-flex;
     padding: 50px;
+    p {
+        padding: 50px;
+    }
 }
 
-.nosotros-container p {
-    padding: 20px;
-}
+/*.nosotros-container p {
+    padding: 50px;
+}*/
