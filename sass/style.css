@@ -19,19 +19,23 @@
 }
 
 /* bodas*/
-.bodas-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  padding: 20px;
-  grid-gap: 10px;
+.gallery{
+	padding: 30px 0px;
 }
 
-.galeria__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+img{
+max-width: 100%;
+}
+
+.gallery img{
+padding: 5px;
+width: auto;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+cursor: pointer;
+}
+
+#gallery-popup .modal-img{
+width: 100%;
 }
 
 /*quinces*/
@@ -51,20 +55,25 @@
 }
 
 /*infantil*/
-.infantil-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  padding: 20px;
-  grid-gap: 10px;
+.gallery-infant{
+	padding: 30px 0px;
 }
 
-.infantgaleria__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+img{
+max-width: 100%;
 }
+
+.gallery-infant img{
+padding: 5px;
+width: auto;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+cursor: pointer;
+}
+
+#gallery-popup .modal-img{
+width: 100%;
+}
+
 
 /* contacto */
 form {
@@ -215,5 +224,4 @@ footer {
   .nosotros-container article {
     flex-direction: column;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

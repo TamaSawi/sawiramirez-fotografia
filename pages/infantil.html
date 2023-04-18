@@ -50,42 +50,71 @@
       </div>
     </nav>
   </header>
-  <div class="infantil-container">
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-06.jpg" alt="niña-bosque" class="infantgaleria__img">
+  <section class="gallery-infant min-vh-100">
+    <div class="container-lg">
+      <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+          <img src="../img/infantil-06.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-07.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-08.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-09.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-10.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-11.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-12.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-13.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-14.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-15.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-16.jpg" class="infant-item" alt="Intantil1">
+        </div>
+
+        <div class="col">
+          <img src="../img/infantil-17.jpg" class="infant-item" alt="Intantil1">
+        </div>
+      </div>
     </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-07.jpg" alt="niña-plantas" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-08.jpg" alt="niña-rosa" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-09.jpg" alt="niña-rojo" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-10.jpg" alt="niña-pequeña" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-11.jpg" alt="niña-perro" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-12.jpg" alt="hermanas" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-13.jpg" alt="niña-pajaros" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-14.jpg" alt="embarazada" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-15.jpg" alt="mama-papa" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-16.jpg" alt="niño-otoño" class="infantgaleria__img">
-    </div>
-    <div class="infantgaleria__item">
-      <img src="../img/infantil-17.jpg" alt="niña-invierno" class="infantgaleria__img">
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/infantil-06.jpg" class="modal-img" alt="Modal Image">
+        </div>
+      </div>
     </div>
   </div>
 
@@ -121,6 +150,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
-</body>
+    
+    <script type="text/javascript">
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("infant-item")) {
+          const src = e.target.getAttribute("src");
+          document.querySelector(".modal-img").src = src;
+          const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+          myModal.show();
+        }
+      })
+    </script>
+  </body>
 
 </html>
