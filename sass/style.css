@@ -195,7 +195,7 @@ footer {
 
 /* MEDIA QUERIES*/
 /*mobile*/
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   header {
     flex-direction: column;
   }
@@ -204,8 +204,8 @@ footer {
   }
   /*footer*/
   .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    grid-template-columns: (1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
   }
@@ -224,4 +224,38 @@ footer {
   .nosotros-container article {
     flex-direction: column;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+  /*Tablet*/
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    width: 90%;
+  }
+  /*footer*/
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  /*bodas*/
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  /*quinces*/
+  .quinces-container {
+    grid-template-columns: (1, 1fr);
+  }
+  /*Infantil*/
+  .gallery-infant {
+    grid-template-columns: 1fr;
+  }
+  /*Nosotros*/
+  .nosotros-container article {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
